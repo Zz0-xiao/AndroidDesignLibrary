@@ -67,22 +67,6 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
 //            }
 //        });
 
-        fab = findView(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Snackbar snackbar = Snackbar.make(v, "测试弹出提示", Snackbar.LENGTH_LONG);
-                snackbar.setActionTextColor(getResources().getColor(android.R.color.holo_red_dark));
-                snackbar.show();
-                snackbar.setAction("取消", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(MainActivity.this, "SnackBar action", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
-        });
-
 
         drawerLayout = findView(R.id.drawer_layout);
         navigationView = findView(R.id.navigationView);
@@ -159,9 +143,9 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
         toolbar = findView(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        toolbar.setTitle("废墟的树");
-        toolbar.setSubtitle("CSDN");
-        toolbar.setLogo(R.drawable.ic_launcher);
+        toolbar.setTitle("小黄人");
+//        toolbar.setSubtitle("CSDN");
+        toolbar.setLogo(R.drawable.ic_launcher22);
         toolbar.setNavigationIcon(R.drawable.ic_list_black_24dp);
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setOnMenuItemClickListener(this);

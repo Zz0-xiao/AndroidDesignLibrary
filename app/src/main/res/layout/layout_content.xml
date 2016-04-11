@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabTextColor="@android:color/white"
-            app:tabSelectedTextColor="@android:color/holo_red_light"
+            app:tabSelectedTextColor="#0ff"
             app:tabGravity="fill" />
 
     </android.support.design.widget.AppBarLayout>
@@ -36,14 +36,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        app:borderWidth="0dp"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_discuss" />
-
 </android.support.design.widget.CoordinatorLayout>
