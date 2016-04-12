@@ -26,7 +26,7 @@ import java.util.List;
 public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClickListener {
 
     private Toolbar toolbar;
-    private FloatingActionButton fab;
+//    private FloatingActionButton fab;
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -66,8 +66,6 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
 //            public void afterTextChanged(Editable s) {
 //            }
 //        });
-
-
         drawerLayout = findView(R.id.drawer_layout);
         navigationView = findView(R.id.navigationView);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -109,19 +107,20 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
         tabList.add("Tab2");
         tabList.add("Tab3");
         tabList.add("Tab4");
-        tabList.add("Tab5");
-        tabList.add("Tab6");
-        tabList.add("Tab7");
-        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);//设置tab模式，当前为系统默认模式
+//        tabList.add("Tab5");
+//        tabList.add("Tab6");
+//        tabList.add("Tab7");
+        tabLayout.setTabMode(TabLayout.MODE_FIXED);//设置tab模式，当前为系统默认模式 TabLayout.MODE_SCROLLABLE
+
         //此处代码设置无效，不知道为啥？？？xml属性是可以的
 //        tabLayout.setTabTextColors(android.R.color.white, android.R.color.holo_red_dark);//设置TabLayout两种状态
-        tabLayout.addTab(tabLayout.newTab().setText(tabList.get(0)));//添加tab选项卡
-        tabLayout.addTab(tabLayout.newTab().setText(tabList.get(1)));
-        tabLayout.addTab(tabLayout.newTab().setText(tabList.get(2)));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab4"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab5"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab6"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab7"));
+//        tabLayout.addTab(tabLayout.newTab().setText(tabList.get(0)));//添加tab选项卡
+//        tabLayout.addTab(tabLayout.newTab().setText(tabList.get(1)));
+//        tabLayout.addTab(tabLayout.newTab().setText(tabList.get(2)));
+//        tabLayout.addTab(tabLayout.newTab().setText("Tab4"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Tab5"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Tab6"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Tab7"));
 
         List<Fragment> fragmentList = new ArrayList<>();
         for (int i = 0; i < tabList.size(); i++) {

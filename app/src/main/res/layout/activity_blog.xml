@@ -46,5 +46,9 @@
         android:onClick="login"
         android:text="登录"
         android:textSize="18sp" />
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:textColor="@android:color/black" />
 </LinearLayout>
