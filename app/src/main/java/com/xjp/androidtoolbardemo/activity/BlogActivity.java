@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ZoomButton;
 
 import com.xjp.androidtoolbardemo.R;
 
@@ -42,7 +43,7 @@ public class BlogActivity extends BaseActivity {
         toolbar = findView(R.id.toolbar);
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//显示返回按钮
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setTitle("登录");
 
@@ -102,7 +103,7 @@ public class BlogActivity extends BaseActivity {
         if (mb.length() > 0 && mb.length() < 9) {
             if (ps.length() == 6) {
                 Uri u = Uri.parse("http://blog.csdn.net/feiduclear_up");
-                Intent it = new Intent(Intent.ACTION_VIEW, u);
+                Intent it = new Intent(Intent.ACTION_VIEW,u);
                 startActivity(it);
             } else {
                 Snackbar.make(view, "请输入6位数的密码", Snackbar.LENGTH_SHORT).show();
@@ -114,7 +115,7 @@ public class BlogActivity extends BaseActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item)
+    public boolean onOptionsItemSelected(MenuItem item)////返回案件点击事件
     {
         if(item.getItemId() == android.R.id.home)
         {

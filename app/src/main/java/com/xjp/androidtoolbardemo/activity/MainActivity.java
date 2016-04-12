@@ -121,7 +121,7 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
 //        tabLayout.addTab(tabLayout.newTab().setText("Tab5"));
 //        tabLayout.addTab(tabLayout.newTab().setText("Tab6"));
 //        tabLayout.addTab(tabLayout.newTab().setText("Tab7"));
-
+//
         List<Fragment> fragmentList = new ArrayList<>();
         for (int i = 0; i < tabList.size(); i++) {
             Fragment f1 = new TabFragment();
@@ -135,7 +135,7 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
         viewPager.setAdapter(fragmentAdapter);//给ViewPager设置适配器
         tabLayout.setupWithViewPager(viewPager);//将TabLayout和ViewPager关联起来。
         tabLayout.setTabsFromPagerAdapter(fragmentAdapter);//给Tabs设置适配器
-
+//        tabLayout.
     }
 
     private void initToolbar() {
@@ -144,7 +144,7 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setTitle("小黄人");
 //        toolbar.setSubtitle("CSDN");
-        toolbar.setLogo(R.drawable.ic_launcher22);
+//        toolbar.setLogo(R.drawable.ic_launcher22);
         toolbar.setNavigationIcon(R.drawable.ic_list_black_24dp);
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setOnMenuItemClickListener(this);
@@ -184,6 +184,7 @@ public class MainActivity extends BaseActivity implements Toolbar.OnMenuItemClic
         switch (item.getItemId()) {
             case R.id.action_edit:
                 Toast.makeText(this, "查找按钮", Toast.LENGTH_SHORT).show();
+//                Snackbar.make(view, "请输入6位数的密码", Snackbar.LENGTH_SHORT).show();
                 break;
             case R.id.action_share:
                 Toast.makeText(this, "分享按钮", Toast.LENGTH_SHORT).show();
