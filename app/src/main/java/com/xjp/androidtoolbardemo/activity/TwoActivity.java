@@ -20,6 +20,11 @@ public class TwoActivity extends BaseActivity {
     private CollapsingToolbarLayout collapsingToolbar;
 
     @Override
+    protected void init() {
+        
+    }
+
+    @Override
     protected int getContentView() {
         return R.layout.activity_two;
     }

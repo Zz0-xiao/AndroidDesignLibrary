@@ -31,6 +31,10 @@ public class BlogActivity extends BaseActivity {
     private EditText password;
     private Toolbar toolbar;
 
+    @Override
+    protected void init() {
+
+    }
 
     @Override
     protected int getContentView() {

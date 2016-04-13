@@ -65,11 +65,7 @@
 
             <include layout="@layout/item_card_view" />
 
-            <include layout="@layout/item_card_view" />
 
-            <include layout="@layout/item_card_view" />
-
-            <include layout="@layout/item_card_view" />
 
         </LinearLayout>
 

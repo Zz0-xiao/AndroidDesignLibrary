@@ -1,4 +1,4 @@
-package com.xjp.androidtoolbardemo.activity;
+package com.xjp.androidtoolbardemo.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.xjp.androidtoolbardemo.R;
+import com.xjp.androidtoolbardemo.activity.TwoActivity;
 import com.xjp.androidtoolbardemo.adapter.RecyclerAdapter;
 import com.xjp.androidtoolbardemo.model.ModelBean;
 
@@ -25,7 +27,7 @@ import java.util.List;
  * Time: 15:03
  */
 
-public class TabFragment extends Fragment {
+public class homeFragment extends Fragment {
 
     private String content;
     private View view;
